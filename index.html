@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#7c3aed" />
+    <title>OneTinyApp - Privacy First Utilities</title>
+    
+    <!-- App Logo Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237c3aed'/%3E%3Cpath d='M20.5 9v14a3.5 3.5 0 1 1-3.5-3.5h-7a3.5 3.5 0 1 1 3.5 3.5V9a3.5 3.5 0 1 1 3.5 3.5h7a3.5 3.5 0 1 1-3.5-3.5' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round' transform='translate(-1 -1)'/%3E%3C/svg%3E" type="image/svg+xml">
+
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Inter"', 'sans-serif'],
+              display: ['"Plus Jakarta Sans"', 'sans-serif'],
+              logo: ['"Outfit"', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                primary: '#7c3aed', // Violet 600
+                secondary: '#ec4899', // Pink 500
+                accent: '#f59e0b', // Amber 500
+                dark: '#0f172a', // Slate 900
+                surface: '#ffffff',
+                light: '#f8fafc',
+              }
+            },
+            boxShadow: {
+              'glow': '0 0 20px rgba(124, 58, 237, 0.15)',
+              'card': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background: linear-gradient(135deg, #f8fafc 0%, #f3f4f6 100%);
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      
+      /* Smooth scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+
+      /* Glassmorphism Utilities */
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+      
+      .glass-sidebar {
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(20px);
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+        box-shadow: 0 4px 14px 0 rgba(124, 58, 237, 0.39);
+      }
+      .btn-primary:hover {
+        box-shadow: 0 6px 20px rgba(124, 58, 237, 0.23);
+        transform: translateY(-1px);
+      }
+      
+      .input-modern {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        transition: all 0.2s ease;
+      }
+      .input-modern:focus {
+        background: #ffffff;
+        border-color: #7c3aed;
+        box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "recharts": "https://esm.sh/recharts@^3.6.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "qrcode.react": "https://esm.sh/qrcode.react@^4.2.0",
+    "pdf-lib": "https://esm.sh/pdf-lib@^1.17.1",
+    "pdfjs-dist": "https://esm.sh/pdfjs-dist@4.10.38",
+    "diff": "https://esm.sh/diff@5.2.0",
+    "docx": "https://esm.sh/docx@^9.1.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="./assets/index-DPlSi2j0.js"></script>
+</head>
+  <body class="text-slate-900 antialiased h-screen overflow-hidden selection:bg-brand-secondary selection:text-white">
+    <div id="root"></div>
+</body>
+</html>
