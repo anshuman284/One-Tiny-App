@@ -15,6 +15,7 @@ OneTinyApp bundles essential utilities into a single, cohesive interface:
 ### 📄 PDF Tools
 *   **PDF Merge:** Combine multiple PDF files into a single document with drag-and-drop reordering.
 *   **PDF to Word:** Convert PDF documents to editable `.docx` files using client-side extraction.
+*   **Compress PDF:** Reduce PDF file sizes with three compression levels (low, medium, high) while maintaining quality.
 
 ### 💰 Finance
 *   **SIP Calculator:** Estimate returns on Mutual Funds with a visual breakdown of invested vs. gained wealth.
